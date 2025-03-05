@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jocelyn Caballero - Tech Portfolio</title>
+    <link rel="stylesheet" href="normalize.css" media="screen">
+    <link rel="stylesheet" href="resets.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">JC</div>
+                <ul>
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#education">Education</a></li>   
+                    <li><a href="#skills">Skills</a></li> 
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="cv.jpg" alt="Profile Picture" class="profile-image">
+                    <div class="hero-text">
+                        <h1>Jocelyn Caballero</h1>
+                        <p>Information Technology Enthusiast | Web Developer</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="card-grid">
+                <div class="card" id="about">
+                    <div class="card-header">About Me</div>
+                    <div class="card-body">
+                        <p>A passionate and motivated individual with a strong background in Information Technology. 
+                        Committed to continuous learning and professional growth in the dynamic world of technology.</p>
+                        <div class="skills-preview">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" id="education">
+                    <div class="card-header">Education</div>
+                    <div class="card-body">
+                        <div id="courses-list"></div>
+                    </div>
+                </div>
+                
+                <div class="card" id="skills">
+                    <div class="card-header">Technical Skills</div>
+                    <div class="card-body">
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3>Programming Languages</h3>
+                                <div class="skill-bars">
+                                    <div class="skill-bar" style="--skill-level: 85%">
+                                        <span class="skill-name">Python</span>
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                    <div class="skill-bar" style="--skill-level: 75%">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Frameworks & Tools</h3>
+                                <div class="skill-bars">
+                                    <div class="skill-bar" style="--skill-level: 80%">
+                                        <span class="skill-name">React</span>
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                    <div class="skill-bar" style="--skill-level: 70%">
+                                        <span class="skill-name">Node.js</span>
+                                        <div class="skill-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" id="portfolio">
+                    <div class="card-header">Portfolio Projects</div>
+                    <div class="card-body">
+                        <div class="project-grid">
+                            <div class="project-card">
+                                <h3>Web Development Portfolio</h3>
+                                <p>Responsive personal portfolio showcasing web development skills</p>
+                                <div class="project-tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <h3>E-commerce Platform</h3>
+                                <p>Full-stack e-commerce website with product management</p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <h3>Machine Learning Analysis</h3>
+                                <p>Data analysis project using Python and machine learning techniques</p>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="contact">
+                    <div class="card-header">Contact Information</div>
+                    <div class="card-body">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="mailto:celinecaballero143@gmail.com">celinecaballero143@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>092345678</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <a href="www.linkedin.com/in/caballero-jocelyn-95aba9331" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <a href="https://github.com/Jocelyn3104/jocelyn3104.github.io" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Jocelyn Caballero | Crafted with ❤️ in Tech</p>
+        </footer>
+    </div>
+    <script src="courses.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
