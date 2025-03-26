@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const coursesContainer = document.getElementById("courses-list");
     console.log("Courses container:", coursesContainer);
 
-    // Create the courses list container if it doesn't exist
     if (!coursesContainer) {
         const educationDiv = document.getElementById("education");
         if (educationDiv) {
@@ -16,13 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Directly reference coursesData from the global scope
     const courses = window.coursesData ? window.coursesData.courses : null;
     console.log("Courses:", courses);
 
     if (courses && courses.length > 0) {
-        const coursesContainer = document.getElementById("courses-list");
-        
         courses.forEach(course => {
             const courseItem = document.createElement("div");
             courseItem.classList.add("course-item");
@@ -37,11 +33,36 @@ document.addEventListener("DOMContentLoaded", function () {
             coursesContainer.appendChild(courseItem);
         });
     } else {
-        const coursesContainer = document.getElementById("courses-list");
         if (coursesContainer) {
             coursesContainer.innerHTML = "<p>No courses available.</p>";
         } else {
             console.error("Could not find courses-list container");
         }
     }
+
+    // Add search bar to the navigation
+    const nav = document.querySelector('.nav');
+    const searchContainer = document.createElement('div');
+    searchContainer.innerHTML = `
+        <input type="text" id="search-input" placeholder="Search..."/>
+        <button id="search-btn">🔍</button>
+    `;
+    searchContainer.classList.add('search-container');
+    nav.appendChild(searchContainer);
+
+    // Search function
+    document.getElementById('search-btn').addEventListener('click', function() {
+        const query = document.getElementById('search-input').value.toLowerCase();
+        const sections = document.querySelectorAll('.card');
+
+        sections.forEach(section => {
+            const text = section.innerText.toLowerCase();
+            section.style.display = text.includes(query) ? 'block' : 'none';
+        });
+    });
+
+    // Real-time search
+    document.getElementById('search-input').addEventListener('input', function() {
+        document.getElementById('search-btn').click();
+    });
 });
